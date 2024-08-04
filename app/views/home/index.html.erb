@@ -1,0 +1,13 @@
+<div class="col-lg-12">
+  <h3 class="mt-4 mb-4">Upcoming Workshops</h3>
+
+  <div class="row">
+    <%= render partial: 'workshops/workshop', collection: @upcoming_workshop %>
+  </div>
+
+  <h3 class="mt-4 mb-4">Past Workshops</h3>
+
+  <div class="row">
+    <%= render partial: 'workshops/workshop', collection: @past_workshop %>
+  </div>
+</div>
