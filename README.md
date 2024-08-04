@@ -1,24 +1,45 @@
-# README
+# Webinari
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a repository from _Real World Web Apps with Rails 7_ from [APPSIMPACT](https://www.youtube.com/playlist?list=PL6SEI86zExmv7wAb5pv3cTVijg1OXEnzP)
 
-Things you may want to cover:
+## Dependencies
 
-* Ruby version
+This project require ruby 3.3.4 and rails 7.1.3.4
 
-* System dependencies
+## Setup Project
 
-* Configuration
+```
+git clone https://github.com/diegodev9/webinari.git
+cd webinari
+bundle install
+rails db:create
+rails db:migrate
+rails db:seed
+```
 
-* Database creation
+## Setup Yarn
 
-* Database initialization
+```
+yarn install
+```
 
-* How to run the test suite
+## Setting up Stripe Keys
 
-* Services (job queues, cache servers, search engines, etc.)
+First create an account on stripe and then copy your test environment keys. And then create a new file into the project with name .env and place these keys there like this:
 
-* Deployment instructions
+```
+STRIPE_PUBLISHABLE_KEY="YOUR_STRIPE_PUBLISHABLE_KEY_HERE"
+STRIPE_SECRET_KEY="YOUR_STRIPE_SECRET_KEY_HERE"
+```
 
-* ...
+## Run the project
+
+After finishing all these steps let's run the rails server
+```
+bin/dev
+```
+and open your browser at http//:127.0.0.1:3000
+
+## Video Tutorial
+
+The complete guide for this project to learn things on [Building Real World Web Application with Rails 7 | Bootstrap 5 | Stripe](https://www.youtube.com/watch?v=XbtcK8Sy7Pg&list=PL6SEI86zExmv7wAb5pv3cTVijg1OXEnzP)
